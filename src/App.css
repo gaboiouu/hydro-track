@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Color celeste claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #e0f7fa; /* Color celeste */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black; /* Color negro para las etiquetas */
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #ccc; /* Color negro para el texto de entrada */
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white; /* Color blanco para el texto de entrada de tipo number */
+  background-color: #333; /* Fondo oscuro para el campo de entrada de tipo number */
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745; /* Color verde para el botón en ConfiguracionUsuario */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838; /* Color verde oscuro para el botón en hover */
+}
+
+h2, h3, p {
+  color: black; /* Color negro para los encabezados y párrafos */
+}
+
+p.error {
+  color: red; /* Color rojo para mensajes de error */
+}
