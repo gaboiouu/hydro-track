@@ -29,19 +29,15 @@ label {
   color: black; /* Color negro para las etiquetas */
 }
 
-input[type="text"] {
+input[type="text"], input[type="number"] {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  color: #ccc; /* Color negro para el texto de entrada */
+  color: black; /* Color negro para el texto de entrada */
 }
 
 input[type="number"] {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   color: white; /* Color blanco para el texto de entrada de tipo number */
   background-color: #333; /* Fondo oscuro para el campo de entrada de tipo number */
 }
@@ -65,4 +61,20 @@ h2, h3, p {
 
 p.error {
   color: red; /* Color rojo para mensajes de error */
+}
+
+/* Media queries para hacer la aplicación responsiva */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  input[type="text"], input[type="number"] {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+  }
 }
